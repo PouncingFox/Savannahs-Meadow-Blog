@@ -1,0 +1,365 @@
+/*
+Theme Name: Lavendar v2.
+Theme URI: Your Theme's URI
+Description: Main Savannah's Meadow Theme.
+Version: 1.0
+Author: Nick Talyor
+Author URI: https://www.pouncingfoxdesign.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+#body {
+	font-family: "Lora", Serif;
+	background-color: #fef5f4;
+	font-size: 18px;
+	color: #6b3f03;
+}
+
+#nav {
+  height: 20px;
+  background: #EBDFD1;
+  border: none;
+}
+
+.navbar-toggle {
+  border-radius: 2px;
+  border-color: #6b3f03;
+}
+
+.icon-bar {
+  background-color: #6b3f03;
+}
+
+.navbar li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background: #EBDFD1;
+    font-size: 15px;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+    border-bottom: 7px solid transparent;
+    border-left: none;
+    border-right: 7px solid rgba(0, 0, 0, 0.2);
+    border-top: 7px solid transparent;
+    left: -7px;
+    top: 10px;
+}
+.navbar .sub-menu:after {
+    border-top: 6px solid transparent;
+    border-left: none;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent;
+    left: 10px;
+    top: 11px;
+    left: -6px;
+}
+#myNavbar a {
+  color: #6b3f03;
+  background: #EBDFD1;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+#myNavbar a:hover {
+  color: #975eb2;
+  background: #EBDFD1;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+
+.animated-logo {
+  width: 200px;
+  margin-top: -10px;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+.logo {
+  width: 50px;
+  margin-top: -10px;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+#flexsliderTop {
+  margin-top: 3%;
+}
+
+#flexsliderTop .slides li {
+  position: relative;
+}
+
+#flexsliderTop .flex-caption {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#flexsliderTop .flex-caption h3 {
+  font-size: 35px;
+}
+
+#flexsliderTop .flex-caption p {
+  font-size: 25px;
+}
+
+#flexsliderTop .slides li {
+  position: relative;
+}
+
+.slides {
+  background-color: #fef5f4;
+  border-color: #fef5f4; 
+}
+
+.btn {
+	background-color: #975eb2;
+	color: white;
+	border: none;
+	-webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+	-webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+#main a {
+  color: #975eb2;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+#main a:hover {
+  color: #BB8CD1;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+#treebtn {
+   text-align: center;
+}
+
+#treebtn2 {
+	text-align: center;
+	padding-bottom: 80px;
+
+
+}
+
+#treebtn2 .btn {
+  background-color: #975eb2;
+  color: white;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+}
+
+#treebtn2 .btn:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+}
+
+.flex-caption .btn {
+  background-color: #975eb2;
+  color: white;
+  border: none;
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+}
+
+#venues {
+	margin-left: 13%;
+	margin-right: 13%;
+  border-color: #fef5f4; 
+}
+
+.col-sm-4 {
+	padding: 20px 20px 20px 20px;
+}
+
+#come {
+	margin-left: 13%;
+	margin-right: 13%;
+  	margin-top: 40px;
+  	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#contact {
+  margin-left: 13%;
+  margin-right: 13%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#googleMap {
+    width: 90%;
+    height: 400px;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+}
+
+#map {
+  padding-right: -10px;
+}
+
+#social {
+	padding-bottom: 80px;
+}
+
+#social a {
+	color: #975eb2;
+	padding-left: 40px;
+	padding-right:40px;
+	-webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+#social a:hover {
+	color: #BB8CD1;
+	-webkit-transition: all 0.3s ease 0s;
+       -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+         -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+}
+
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+ul li {
+  list-style:none;
+  margin-bottom:25px;
+}
+#bareTop {
+	margin-left: 13%;
+	margin-right: 13%;
+  margin-top: 55px;
+}
+
+#gallery {
+	margin-left: 13%;
+	margin-right: 13%;
+}
+
+#geninfo {
+	margin-left: 13%;
+	margin-right: 13%;
+}
+
+#pagetop {
+  float: left;
+  padding-right: 20px;
+  width: 500px;
+  height: 50%;
+}
+
+#main {
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 20px;
+}
+
+#posts {
+  margin-left: 100px;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  background-color: #fef5f4;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
