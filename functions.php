@@ -78,4 +78,16 @@ add_action( 'after_setup_theme', 'wpt_setup' );
             register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
         } endif;
 require_once('wp_bootstrap_navwalker.php');
+
+
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'album', 'movies', 'quote' ) );
+
+	return $query;
+};
+
 ?>

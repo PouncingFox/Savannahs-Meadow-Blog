@@ -47,8 +47,8 @@
       </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-<a class="navbar-brand" href="#"><img id="logo" class="img-responsive animated-logo center-block" src="<?php bloginfo('template_directory');?>/img/SMLogo.png"></a>
-      <?php /* Primary navigation */
+<a class="navbar-brand" href="#"><img id="logo" class="animated-logo" src="<?php bloginfo('template_directory');?>/img/SMLogo.png"></a>
+     <div id="navies"> <?php /* Primary navigation */
 wp_nav_menu( array(
   'menu' => 'top_menu',
   'depth' => 2,
@@ -58,6 +58,7 @@ wp_nav_menu( array(
   'walker' => new wp_bootstrap_navwalker())
 );
 ?>
+</div>
     </div>
 </nav>
 
