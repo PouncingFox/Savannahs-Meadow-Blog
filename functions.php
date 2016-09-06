@@ -1,4 +1,5 @@
 <?php
+
 function lavendar_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
       wp_enqueue_script( 'comment-reply' );
@@ -9,10 +10,58 @@ add_action( 'wp_enqueue_scripts', 'lavendar_scripts' );
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
 
+function custom_post_type() {
+	$labels = array(
+	'name'				  => _x('Cars', 'Post Type General Name'),
+	'singular_name'		  => _x('Car', 'Post Type Singular Name'),
+	'menu_name'			  => __('Cars'),
+	'parent_item_colon'   => __('Parent Car'),
+	'all_items'           => __( 'All Cars'),
+	'view_item'           => __( 'View Car'),
+	'add_new_item'        => __( 'Add New Car'),
+	'add_new'             => __( 'Add New'),
+	'edit_item'           => __( 'Edit Car'),
+	'update_item'         => __( 'Update Car'),
+	'search_items'        => __( 'Search Car'),
+	'not_found'           => __( 'Not Found'),
+	'not_found_in_trash'  => __( 'Not found in Trash')
+);
+
+	
+	$args = array(
+		'label'               => __( 'cars'),
+		'description'         => __( 'Car news and reviews'),
+		'labels'              => $labels,
+		// Features this CPT supports in Post Editor
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+		// You can associate this CPT with a taxonomy or custom taxonomy. 
+		'taxonomies'          => array( 'genres' ),
+		/* A hierarchical CPT is like Pages and can have
+		* Parent and child items. A non-hierarchical CPT
+		* is like Posts.
+		*/	
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	
+	// Registering your Custom Post Type
+	register_post_type( 'cars', $args );
+
+
+
 /*
 * Creating a function to create our CPT
 */
-function custom_post_type() {
 
 // Set UI labels for Custom Post Type
 	$labels = array(
@@ -30,7 +79,7 @@ function custom_post_type() {
 		'not_found'           => __( 'Not Found', 'twentythirteen' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'twentythirteen' ),
 	);
-	
+
 // Set other options for Custom Post Type
 	
 	$args = array(
@@ -80,14 +129,5 @@ add_action( 'after_setup_theme', 'wpt_setup' );
 require_once('wp_bootstrap_navwalker.php');
 
 
-add_filter( 'pre_get_posts', 'my_get_posts' );
-
-function my_get_posts( $query ) {
-
-	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'album', 'movies', 'quote' ) );
-
-	return $query;
-};
 
 ?>
